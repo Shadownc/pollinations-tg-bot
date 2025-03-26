@@ -1,0 +1,12 @@
+name = "pollinations-tg-bot"
+main = "src/cloudflare-entry.js"
+compatibility_date = "2023-07-24"
+nodejs_compat = true
+
+[vars]
+# Define your environment variables here or use Cloudflare's dashboard
+BOT_TOKEN = "BOT_TOKEN"
+WEBHOOK_URL = "WEBHOOK_URL"
+
+# Add secrets through the Cloudflare dashboard or using wrangler
+# wrangler secret put BOT_TOKEN 

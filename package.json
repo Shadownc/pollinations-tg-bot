@@ -1,0 +1,30 @@
+{
+  "name": "pollinations-tg-bot",
+  "version": "1.0.0",
+  "description": "Telegram bot for Pollinations.AI API with voice, image, and chat capabilities",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "deploy:cf": "wrangler deploy",
+    "docker:build": "docker build -t pollinations-tg-bot .",
+    "docker:run": "docker run -p 3000:3000 --env-file .env pollinations-tg-bot"
+  },
+  "dependencies": {
+    "axios": "^1.6.7",
+    "dotenv": "^16.4.5",
+    "form-data": "^4.0.0",
+    "grammy": "^1.21.1",
+    "node-fetch": "^2.7.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0",
+    "wrangler": "^3.29.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "author": "",
+  "license": "MIT",
+  "type": "module"
+}
